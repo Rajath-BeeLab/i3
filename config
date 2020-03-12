@@ -24,7 +24,7 @@ font -misc-fixed-medium-r-normal--12-120-75-75-C-70-iso10646-1
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec "~/Scripts/terminal"
+bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
 bindsym $mod+c kill
@@ -41,13 +41,6 @@ bindsym $mod+r exec dmenu_run
 bindsym $mod+Escape exec "$HOME/.config/i3/locker.sh"
 bindsym Mod1+Control+m exec "amixer sset Master 10%-"
 bindsym Mod1+Control+l exec "amixer sset Master 10%+"
-bindsym Mod1+Control+n exec "mpc next"
-bindsym Mod1+Control+p exec "mpc prev"
-bindsym Mod1+Control+t exec "mpc toggle"
-bindsym Mod1+Control+d exec "$HOME/Scripts/mpc_manage.sh -d"
-bindsym Mod1+Control+a exec "$HOME/Scripts/mpc_manage.sh -a"
-bindsym Mod4+Control+n exec "tomboy --new-note"
-bindsym Mod4+Control+j exec "$HOME/Scripts/trigger_jackass.sh"
 
 # Screenshots.
 bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
